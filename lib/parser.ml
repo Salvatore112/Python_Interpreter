@@ -236,7 +236,7 @@ let p_exp_or_stmt =
 (* function that runs the given parser on a string *)
 let parse p s = parse_string ~consume:All p s
 
-(* A parser for Python WIP *)
+(* A parser for Python *)
 let pyParser = sep_by skip_stmt_sep (p_exp_or_stmt.p_statement p_exp_or_stmt)
 
 (* Tests *)
