@@ -1,1 +1,1 @@
-lib/ast.pp.ml: Ppx_inline_test_lib
+lib/ast.pp.ml: Expect_test_collector Ppx_inline_test_lib

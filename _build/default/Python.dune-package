@@ -36,10 +36,14 @@
  (plugins (byte Lib/python_Lib.cma) (native Lib/python_Lib.cmxs))
  (native_archives Lib/python_Lib.a)
  (requires
+  ppx_show.runtime
   base
   angstrom
   ppx_inline_test.config
   ppx_inline_test.runtime-lib
+  ppx_here.runtime-lib
+  ppx_expect.collector
+  ppx_expect.config
   ppx_deriving.runtime)
  (main_module_name Python_Lib)
  (modes byte native)

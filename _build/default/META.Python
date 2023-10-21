@@ -6,8 +6,12 @@ package "Lib" (
   "angstrom
    base
    ppx_deriving.runtime
+   ppx_expect.collector
+   ppx_expect.config
+   ppx_here.runtime-lib
    ppx_inline_test.config
-   ppx_inline_test.runtime-lib"
+   ppx_inline_test.runtime-lib
+   ppx_show.runtime"
   archive(byte) = "python_Lib.cma"
   archive(native) = "python_Lib.cmxa"
   plugin(byte) = "python_Lib.cma"
