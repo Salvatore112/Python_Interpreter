@@ -1,0 +1,33 @@
+lib: [
+  "_build/install/default/lib/Python/Lib/ast.ml" {"Lib/ast.ml"}
+  "_build/install/default/lib/Python/Lib/interpret.ml" {"Lib/interpret.ml"}
+  "_build/install/default/lib/Python/Lib/lambda_lib.a" {"Lib/lambda_lib.a"}
+  "_build/install/default/lib/Python/Lib/lambda_lib.cma" {"Lib/lambda_lib.cma"}
+  "_build/install/default/lib/Python/Lib/lambda_lib.cmi" {"Lib/lambda_lib.cmi"}
+  "_build/install/default/lib/Python/Lib/lambda_lib.cmt" {"Lib/lambda_lib.cmt"}
+  "_build/install/default/lib/Python/Lib/lambda_lib.cmx" {"Lib/lambda_lib.cmx"}
+  "_build/install/default/lib/Python/Lib/lambda_lib.cmxa" {"Lib/lambda_lib.cmxa"}
+  "_build/install/default/lib/Python/Lib/lambda_lib.ml" {"Lib/lambda_lib.ml"}
+  "_build/install/default/lib/Python/Lib/lambda_lib__Ast.cmi" {"Lib/lambda_lib__Ast.cmi"}
+  "_build/install/default/lib/Python/Lib/lambda_lib__Ast.cmt" {"Lib/lambda_lib__Ast.cmt"}
+  "_build/install/default/lib/Python/Lib/lambda_lib__Ast.cmx" {"Lib/lambda_lib__Ast.cmx"}
+  "_build/install/default/lib/Python/Lib/lambda_lib__Interpret.cmi" {"Lib/lambda_lib__Interpret.cmi"}
+  "_build/install/default/lib/Python/Lib/lambda_lib__Interpret.cmt" {"Lib/lambda_lib__Interpret.cmt"}
+  "_build/install/default/lib/Python/Lib/lambda_lib__Interpret.cmx" {"Lib/lambda_lib__Interpret.cmx"}
+  "_build/install/default/lib/Python/Lib/lambda_lib__Parser.cmi" {"Lib/lambda_lib__Parser.cmi"}
+  "_build/install/default/lib/Python/Lib/lambda_lib__Parser.cmt" {"Lib/lambda_lib__Parser.cmt"}
+  "_build/install/default/lib/Python/Lib/lambda_lib__Parser.cmx" {"Lib/lambda_lib__Parser.cmx"}
+  "_build/install/default/lib/Python/Lib/parser.ml" {"Lib/parser.ml"}
+  "_build/install/default/lib/Python/META"
+  "_build/install/default/lib/Python/dune-package"
+  "_build/install/default/lib/Python/opam"
+]
+libexec: [
+  "_build/install/default/lib/Python/Lib/lambda_lib.cmxs" {"Lib/lambda_lib.cmxs"}
+]
+bin: [
+  "_build/install/default/bin/REPL"
+]
+doc: [
+  "_build/install/default/doc/Python/README.md"
+]

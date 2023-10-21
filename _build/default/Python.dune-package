@@ -1,0 +1,68 @@
+(lang dune 3.10)
+(name Python)
+(version 0.1)
+(sections (lib .) (libexec .) (bin ../../bin) (doc ../../doc/Python))
+(files
+ (lib
+  (Lib/ast.ml
+   Lib/interpret.ml
+   Lib/parser.ml
+   Lib/python_Lib.a
+   Lib/python_Lib.cma
+   Lib/python_Lib.cmi
+   Lib/python_Lib.cmt
+   Lib/python_Lib.cmx
+   Lib/python_Lib.cmxa
+   Lib/python_Lib.ml
+   Lib/python_Lib__Ast.cmi
+   Lib/python_Lib__Ast.cmt
+   Lib/python_Lib__Ast.cmx
+   Lib/python_Lib__Interpret.cmi
+   Lib/python_Lib__Interpret.cmt
+   Lib/python_Lib__Interpret.cmx
+   Lib/python_Lib__Parser.cmi
+   Lib/python_Lib__Parser.cmt
+   Lib/python_Lib__Parser.cmx
+   META
+   dune-package
+   opam))
+ (libexec (Lib/python_Lib.cmxs))
+ (bin (REPL demo_fact))
+ (doc (README.md)))
+(library
+ (name Python.Lib)
+ (kind normal)
+ (archives (byte Lib/python_Lib.cma) (native Lib/python_Lib.cmxa))
+ (plugins (byte Lib/python_Lib.cma) (native Lib/python_Lib.cmxs))
+ (native_archives Lib/python_Lib.a)
+ (requires
+  base
+  angstrom
+  ppx_inline_test.config
+  ppx_inline_test.runtime-lib
+  ppx_deriving.runtime)
+ (main_module_name Python_Lib)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name python_Lib)
+     (visibility public)
+     (kind alias)
+     (source (path Python_Lib) (impl (path Lib/python_Lib.ml-gen))))
+    (name Python_Lib)
+    (modules
+     (module
+      (obj_name python_Lib__Ast)
+      (visibility public)
+      (source (path Ast) (impl (path Lib/ast.ml))))
+     (module
+      (obj_name python_Lib__Interpret)
+      (visibility public)
+      (source (path Interpret) (impl (path Lib/interpret.ml))))
+     (module
+      (obj_name python_Lib__Parser)
+      (visibility public)
+      (source (path Parser) (impl (path Lib/parser.ml))))))
+   (wrapped true))))
